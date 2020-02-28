@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "powergrid:block/powermeter"
+    "particle": "powergrid:block/powermeter",
+    "north": "powergrid:block/powermeter_front",
+    "south": "powergrid:block/powermeter",
+    "east": "powergrid:block/powermeter",
+    "west": "powergrid:block/powermeter",
+    "up": "powergrid:block/powermeter",
+    "down": "powergrid:block/powermeter"
   }
 }

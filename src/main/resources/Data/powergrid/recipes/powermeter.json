@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#x#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingot/iron"
+    },
+    "x": {
+      "tag": "forge:ingot/gold"
+    }
+  },
+  "result": {
+    "item": "powergrid:powermeter"
+  }
+}

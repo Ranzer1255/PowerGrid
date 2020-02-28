@@ -7,20 +7,21 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.ranzer.powergrid.PowerGrid;
+import net.ranzer.powergrid.blocks.ModBlocks;
 
 //@Mod.EventBusSubscriber(modid = PowerGrid.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModSetup {
 
-//	public static final ItemGroup ITEM_GROUP = new ItemGroup("powergrid") {
-//		@Override
-//		public ItemStack createIcon() {
-//			return new ItemStack(Registration.POWERMETER.get());
-//		}
-//	};
+	public final ItemGroup ITEM_GROUP = new ItemGroup("powergrid") {
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(ModBlocks.POWER_METER);
+		}
+	};
 //
-//	public static void init(final FMLCommonSetupEvent event) {
+	public static void init(final FMLCommonSetupEvent event) {
 //		Networking.registerMessages();
-//	}
+	}
 
 //	@SubscribeEvent
 //	public static void serverLoad(FMLServerStartingEvent event) {

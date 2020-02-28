@@ -36,6 +36,8 @@ public class PowerGrid {
 
 	private void setup(final FMLCommonSetupEvent event){
 
+
+
 	}
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -47,7 +49,9 @@ public class PowerGrid {
 
 		@SubscribeEvent
 		public static void onItemsRegistry(final RegistryEvent.Register<Item> event){
-			event.getRegistry().register(new BlockItem(ModBlocks.POWER_METER, new Item.Properties()).setRegistryName("powermeter"));
+			Item.Properties properties = new Item.Properties()
+					.group(setup.ITEM_GROUP);
+			event.getRegistry().register(new BlockItem(ModBlocks.POWER_METER, properties).setRegistryName("powermeter"));
 		}
 	}
 
