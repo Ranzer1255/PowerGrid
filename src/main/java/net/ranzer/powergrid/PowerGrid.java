@@ -3,6 +3,8 @@ package net.ranzer.powergrid;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
@@ -14,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.ranzer.powergrid.blocks.ModBlocks;
 import net.ranzer.powergrid.blocks.PowerMeter;
 import net.ranzer.powergrid.setup.*;
+import net.ranzer.powergrid.tileentities.PowerMeterTile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -52,6 +55,11 @@ public class PowerGrid {
 			Item.Properties properties = new Item.Properties()
 					.group(setup.ITEM_GROUP);
 			event.getRegistry().register(new BlockItem(ModBlocks.POWER_METER, properties).setRegistryName("powermeter"));
+		}
+
+		@SubscribeEvent
+		public static void onTileentityRegistry(final RegistryEvent.Register<TileEntityType<?>> event){
+			event.getRegistry().register(TileEntityType.Builder.create(PowerMeterTile::new, ModBlocks.POWER_METER).build(null).setRegistryName("powermeter"));
 		}
 	}
 
