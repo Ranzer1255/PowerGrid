@@ -8,7 +8,7 @@ public class ClientProxy implements IProxy {
 
 	@Override
 	public void init() {
-
+//		ScreenManager.registerFactory(IBlocks.POWER_METER_CONTAINER, PowerMeterScreen::new);
 	}
 
 	@Override

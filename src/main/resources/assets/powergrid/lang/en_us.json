@@ -1,5 +1,5 @@
 {
-  "block.powergrid.powermeter": "Power Meter",
+  "block.powergrid.power_meter": "Power Meter",
 
   "_comment": "Creative Tabs",
   "itemGroup.powergrid": "Power Grid"

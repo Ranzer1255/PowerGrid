@@ -2,12 +2,12 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name:": "powermeter_loottable",
+      "name:": "power_meter_loottable",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "powergrid:powermeter"
+          "name": "powergrid:power_meter"
         }
       ],
       "conditions": [

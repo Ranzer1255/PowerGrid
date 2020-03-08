@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "powergrid:block/power_meter" },
+    "facing=south": { "model": "powergrid:block/power_meter", "y": 180 },
+    "facing=west": { "model": "powergrid:block/power_meter", "y": 270 },
+    "facing=east": { "model": "powergrid:block/power_meter", "y": 90 },
+    "facing=up": { "model": "powergrid:block/power_meter", "x": -90 },
+    "facing=down": { "model": "powergrid:block/power_meter", "x": 90 }
+  }
+}

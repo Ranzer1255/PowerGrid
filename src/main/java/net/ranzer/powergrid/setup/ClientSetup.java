@@ -1,13 +1,11 @@
 package net.ranzer.powergrid.setup;
 
-import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.ranzer.powergrid.PowerGrid;
 
-@Mod.EventBusSubscriber(modid = PowerGrid.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = PowerGrid.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ClientSetup {
 
 	public static void init(final FMLClientSetupEvent event) {

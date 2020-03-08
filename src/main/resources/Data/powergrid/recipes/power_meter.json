@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "tag": "forge:ingot/iron"
+      "item": "minecraft:iron_ingot"
     },
     "x": {
-      "tag": "forge:ingot/gold"
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {
-    "item": "powergrid:powermeter"
+    "item": "powergrid:power_meter"
   }
 }
